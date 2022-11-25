@@ -1,4 +1,5 @@
-﻿using DesignPatterns.SOLID.OpenClosedPrinciple;
+﻿using DesignPatterns.SOLID.LiskovSubstitutionPrinciple;
+using DesignPatterns.SOLID.OpenClosedPrinciple;
 using DesignPatterns.SOLID.SingleResponsibilityPrinciple;
 using System.Diagnostics;
 
@@ -48,8 +49,20 @@ namespace DesignPatterns.SOLID
 
             foreach (var product in bf.Filter(products, new MultipleSpecifications<Product>(specifications)))
                 Console.WriteLine($" - {product.Name} is blue and large");
+        }
 
+        public static void LiskovSubstitutionPrinciple()
+        {
+            Rectangle rc = new(2, 3);
+            Console.WriteLine($"{rc} has area {Rectangle.Area(rc)}");
 
+            // should be able to substitute a base type for a subtype
+            /*Square*/
+            Rectangle sq = new Square
+            {
+                Width = 4
+            };
+            Console.WriteLine($"{sq} has area {Rectangle.Area(sq)}");
         }
     }
 }

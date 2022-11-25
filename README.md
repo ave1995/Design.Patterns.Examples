@@ -6,3 +6,4 @@ I made examples of design patterns according to the course with minor improvemen
 
 - Single Responsibility Principle
 - Open-Closed Principle
+- Liskov Substitution Principle

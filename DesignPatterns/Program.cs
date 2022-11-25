@@ -2,4 +2,6 @@
 
 //SOLIDInitialization.SingleResponsibilityPrinciple();
 
-SOLIDInitialization.OpenClosedPrinciple();
+//SOLIDInitialization.OpenClosedPrinciple();
+
+SOLIDInitialization.LiskovSubstitutionPrinciple();
