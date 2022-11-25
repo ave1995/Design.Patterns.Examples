@@ -16,3 +16,6 @@ I made examples of design patterns according to the course with minor improvemen
 - *YAGNI* - You Ain't Going to Need It
 ### Dependency Inversion Principle
 - High-level modules should not depend upon low-level ones; use abstractions
+
+## Builder
+
