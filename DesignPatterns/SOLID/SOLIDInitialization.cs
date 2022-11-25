@@ -1,4 +1,5 @@
-﻿using DesignPatterns.SOLID.LiskovSubstitutionPrinciple;
+﻿using DesignPatterns.SOLID.DependencyInversionPrinciple;
+using DesignPatterns.SOLID.LiskovSubstitutionPrinciple;
 using DesignPatterns.SOLID.OpenClosedPrinciple;
 using DesignPatterns.SOLID.SingleResponsibilityPrinciple;
 using System.Diagnostics;
@@ -63,6 +64,20 @@ namespace DesignPatterns.SOLID
                 Width = 4
             };
             WriteLine($"{sq} has area {Rectangle.Area(sq)}");
+        }
+
+        public static void DependencyInversionPrinciple()
+        {
+            var parent = new Person { Name = "John" };
+            var child1 = new Person { Name = "Chris" };
+            var child2 = new Person { Name = "Matt" };
+
+            // low-level module
+            var relationships = new Relationships();
+            relationships.AddParentAndChild(parent, child1);
+            relationships.AddParentAndChild(parent, child2);
+
+            _ = new Research(relationships as IRelationshipBrowser);
         }
     }
 }

@@ -4,4 +4,6 @@
 
 //SOLIDInitialization.OpenClosedPrinciple();
 
-SOLIDInitialization.LiskovSubstitutionPrinciple();
+//SOLIDInitialization.LiskovSubstitutionPrinciple();
+
+SOLIDInitialization.DependencyInversionPrinciple();
