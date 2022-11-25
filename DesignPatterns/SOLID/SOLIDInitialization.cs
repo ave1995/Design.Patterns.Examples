@@ -2,7 +2,7 @@
 using DesignPatterns.SOLID.OpenClosedPrinciple;
 using DesignPatterns.SOLID.SingleResponsibilityPrinciple;
 using System.Diagnostics;
-
+using static System.Console;
 
 namespace DesignPatterns.SOLID
 {
@@ -13,7 +13,7 @@ namespace DesignPatterns.SOLID
             var j = new Journal();
             j.AddEntry("I cried today.");
             j.AddEntry("I ate a bug.");
-            Console.WriteLine(j);
+            WriteLine(j);
 
             var filename = Path.GetTempPath() + @"journal.txt";
             Persistence.SaveToFile(j, filename);
@@ -41,20 +41,20 @@ namespace DesignPatterns.SOLID
             var bf = new BetterFilterProduct();
 
             foreach (var product in bf.Filter(products, new ColorSpecification(Color.Green)))
-                Console.WriteLine($" - {product.Name} is green");
+                WriteLine($" - {product.Name} is green");
 
-            Console.WriteLine(Environment.NewLine);
+            WriteLine(Environment.NewLine);
 
             ISpecification<Product>[] specifications = { new ColorSpecification(Color.Blue), new SizeSpecification(Size.Large) };
 
             foreach (var product in bf.Filter(products, new MultipleSpecifications<Product>(specifications)))
-                Console.WriteLine($" - {product.Name} is blue and large");
+                WriteLine($" - {product.Name} is blue and large");
         }
 
         public static void LiskovSubstitutionPrinciple()
         {
             Rectangle rc = new(2, 3);
-            Console.WriteLine($"{rc} has area {Rectangle.Area(rc)}");
+            WriteLine($"{rc} has area {Rectangle.Area(rc)}");
 
             // should be able to substitute a base type for a subtype
             /*Square*/
@@ -62,7 +62,7 @@ namespace DesignPatterns.SOLID
             {
                 Width = 4
             };
-            Console.WriteLine($"{sq} has area {Rectangle.Area(sq)}");
+            WriteLine($"{sq} has area {Rectangle.Area(sq)}");
         }
     }
 }
