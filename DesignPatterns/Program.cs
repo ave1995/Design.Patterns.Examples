@@ -1,4 +1,5 @@
-﻿using DesignPatterns.SOLID;
+﻿using DesignPatterns.Builder;
+using DesignPatterns.SOLID;
 
 //SOLIDInitialization.SingleResponsibilityPrinciple();
 
@@ -6,4 +7,6 @@
 
 //SOLIDInitialization.LiskovSubstitutionPrinciple();
 
-SOLIDInitialization.DependencyInversionPrinciple();
+//SOLIDInitialization.DependencyInversionPrinciple();
+
+BuilderInitialization.HtmlBuilderIni();
