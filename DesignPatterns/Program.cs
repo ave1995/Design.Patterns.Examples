@@ -9,4 +9,7 @@ using DesignPatterns.SOLID;
 
 //SOLIDInitialization.DependencyInversionPrinciple();
 
-BuilderInitialization.HtmlBuilderIni();
+//BuilderInitialization.HtmlBuilderIni();
+
+BuilderInitialization.BuilderInheritenceInit();
+

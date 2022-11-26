@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Builder.Html;
+﻿using DesignPatterns.Builder.BuilderInheritance;
+using DesignPatterns.Builder.Html;
 using System.Text;
 using static System.Console;
 
@@ -39,6 +40,16 @@ namespace DesignPatterns.Builder
             builder.AddChildFluent("li", "hello").AddChildFluent("li", "world");
             WriteLine(builder);
 
+        }
+
+        public static void BuilderInheritenceInit()
+        {
+            var me = Person.New
+                .Called("Dmitri")
+                .WorksAsA("Quant")
+                .Born(DateTime.UtcNow)
+                .Build();
+            Console.WriteLine(me);
         }
     }
 }
