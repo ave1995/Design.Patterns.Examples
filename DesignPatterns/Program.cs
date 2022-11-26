@@ -11,5 +11,8 @@ using DesignPatterns.SOLID;
 
 //BuilderInitialization.HtmlBuilderIni();
 
-BuilderInitialization.BuilderInheritenceInit();
+//BuilderInitialization.BuilderInheritenceInit();
+
+BuilderInitialization.StepwiseBuilderInit();
+
 

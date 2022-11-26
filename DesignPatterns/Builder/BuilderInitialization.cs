@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.Builder.BuilderInheritance;
 using DesignPatterns.Builder.Html;
+using DesignPatterns.Builder.StepwiseBuilder;
 using System.Text;
 using static System.Console;
 
@@ -45,11 +46,20 @@ namespace DesignPatterns.Builder
         public static void BuilderInheritenceInit()
         {
             var me = Person.New
-                .Called("Dmitri")
-                .WorksAsA("Quant")
-                .Born(DateTime.UtcNow)
+                .Called("Ales")
+                .WorksAsA("Coder")
+                .Born(DateTime.Now)
                 .Build();
-            Console.WriteLine(me);
+            WriteLine(me);
+        }
+
+        public static void StepwiseBuilderInit()
+        {
+            var car = CarBuilder.Create()
+                .OfType(CarType.Sedan)
+                .WithWheels(16)
+                .Build();
+            WriteLine(car);
         }
     }
 }
