@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Builder.BuilderInheritance;
+using DesignPatterns.Builder.FunctionalBuilder;
 using DesignPatterns.Builder.Html;
 using DesignPatterns.Builder.StepwiseBuilder;
 using System.Text;
@@ -60,6 +61,16 @@ namespace DesignPatterns.Builder
                 .WithWheels(16)
                 .Build();
             WriteLine(car);
+        }
+
+        public static void FunctionalBuilderInit()
+        {
+            var employee = new EmployeeBuilder()
+                .Called("Ales")
+                .WorksAsA("Coder")
+                .Build();
+
+            WriteLine(employee);
         }
     }
 }

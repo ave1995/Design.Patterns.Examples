@@ -13,6 +13,8 @@ using DesignPatterns.SOLID;
 
 //BuilderInitialization.BuilderInheritenceInit();
 
-BuilderInitialization.StepwiseBuilderInit();
+//BuilderInitialization.StepwiseBuilderInit();
+
+BuilderInitialization.FunctionalBuilderInit();
 
 
