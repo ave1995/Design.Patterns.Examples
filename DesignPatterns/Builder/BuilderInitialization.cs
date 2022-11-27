@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Builder.BuilderInheritance;
+using DesignPatterns.Builder.FacetedBuilder;
 using DesignPatterns.Builder.FunctionalBuilder;
 using DesignPatterns.Builder.Html;
 using DesignPatterns.Builder.StepwiseBuilder;
@@ -71,6 +72,22 @@ namespace DesignPatterns.Builder
                 .Build();
 
             WriteLine(employee);
+        }
+
+        public static void FacetedBuilderInit()
+        {
+            var pb = new StaffBuilder();
+            Staff staff = pb
+              .Lives
+                .At("123 London Road")
+                .In("London")
+                .WithPostcode("SW12BC")
+              .Works
+                .At("Fabrikam")
+                .AsA("Engineer")
+                .Earning(123000);
+
+            WriteLine(staff);
         }
     }
 }

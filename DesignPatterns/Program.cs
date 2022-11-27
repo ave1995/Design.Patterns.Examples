@@ -15,6 +15,8 @@ using DesignPatterns.SOLID;
 
 //BuilderInitialization.StepwiseBuilderInit();
 
-BuilderInitialization.FunctionalBuilderInit();
+//BuilderInitialization.FunctionalBuilderInit();
+
+BuilderInitialization.FacetedBuilderInit();
 
 
