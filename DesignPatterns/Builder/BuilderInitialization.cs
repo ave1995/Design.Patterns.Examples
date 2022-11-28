@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Builder.BuilderInheritance;
+﻿using DesignPatterns.Builder.BuilderCodingExercise;
+using DesignPatterns.Builder.BuilderInheritance;
 using DesignPatterns.Builder.FacetedBuilder;
 using DesignPatterns.Builder.FunctionalBuilder;
 using DesignPatterns.Builder.Html;
@@ -88,6 +89,12 @@ namespace DesignPatterns.Builder
                 .Earning(123000);
 
             WriteLine(staff);
+        }
+
+        public static void BuilderCodingExerciseInit()
+        {
+            var cb = new CodeBuilder("Person").AddField("Name", "string").AddField("Age", "int");
+            WriteLine(cb);
         }
     }
 }
