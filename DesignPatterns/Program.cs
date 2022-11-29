@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Builder;
+using DesignPatterns.Factories;
 using DesignPatterns.SOLID;
 
 //SOLIDInitialization.SingleResponsibilityPrinciple();
@@ -19,6 +20,8 @@ using DesignPatterns.SOLID;
 
 //BuilderInitialization.FacetedBuilderInit();
 
-BuilderInitialization.BuilderCodingExerciseInit();
+//BuilderInitialization.BuilderCodingExerciseInit();
+
+FactoriesInitialization.BulkReplacementInit();
 
 
