@@ -22,6 +22,8 @@ using DesignPatterns.SOLID;
 
 //BuilderInitialization.BuilderCodingExerciseInit();
 
-FactoriesInitialization.BulkReplacementInit();
+//FactoriesInitialization.BulkReplacementInit();
+
+FactoriesInitialization.FactoryMethodInit();
 
 

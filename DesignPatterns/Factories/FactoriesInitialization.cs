@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Factories.BulkReplacement;
+using DesignPatterns.Factories.FactoryMethod;
 
 namespace DesignPatterns.Factories
 {
@@ -20,6 +21,16 @@ namespace DesignPatterns.Factories
             Console.WriteLine(magicTheme.Value.BgrColor); // dark gray
             factory2.ReplaceTheme(false);
             Console.WriteLine(magicTheme.Value.BgrColor); // white
+        }
+
+        public static void FactoryMethodInit()
+        {
+            var p1 = new Point(2, 3, CoordinateSystem.Cartesian);
+            var origin = Point.Origin2;
+
+            var p2 = Point.Factory.NewCartesianPoint(1, 2);
+
+            Console.WriteLine(p2);
         }
     }
 }
