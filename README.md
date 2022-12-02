@@ -22,3 +22,9 @@ I made examples of design patterns according to the course with minor improvemen
 - Can either give builder a constructor or return it via a static function
 - To make builder fluent, return this
 - Different facets of an object can be built with different builders working in tandem via a base class
+
+## Factories
+- A factory method is a static method that creates objects
+- A factory can take of object creation
+- A factory can be external or reside inside the object as an inner class
+- Hierarchies of factories can be used to create related objects
