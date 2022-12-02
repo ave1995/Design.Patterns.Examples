@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Factories.FactoryMethod
 {
-    internal enum CoordinateSystem
+    public enum CoordinateSystem
     {
         Cartesian,
         Polar
     }
-    internal class Point
+    public class Point
     {
         private double x, y;
 
@@ -71,7 +71,7 @@ namespace DesignPatterns.Factories.FactoryMethod
             return $"{nameof(x)}: {x} {nameof(y)}: {y}";
         }
     }
-    internal class PointFactory
+    public class PointFactory
     {
         public static Point NewCartesianPoint(float x, float y)
         {

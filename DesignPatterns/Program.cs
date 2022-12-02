@@ -24,6 +24,8 @@ using DesignPatterns.SOLID;
 
 //FactoriesInitialization.BulkReplacementInit();
 
-FactoriesInitialization.FactoryMethodInit();
+//FactoriesInitialization.FactoryMethodInit();
+
+FactoriesInitialization.AbstractFactoryInit();
 
 

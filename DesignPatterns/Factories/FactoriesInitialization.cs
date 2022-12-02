@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Factories.BulkReplacement;
+﻿using DesignPatterns.Factories.AbstractFactory;
+using DesignPatterns.Factories.BulkReplacement;
 using DesignPatterns.Factories.FactoryMethod;
 
 namespace DesignPatterns.Factories
@@ -31,6 +32,16 @@ namespace DesignPatterns.Factories
             var p2 = Point.Factory.NewCartesianPoint(1, 2);
 
             Console.WriteLine(p2);
+        }
+
+        public static void AbstractFactoryInit()
+        {
+            var machine = new HotDrinkMachine();
+            //var drink = machine.MakeDrink(HotDrinkMachine.AvailableDrink.Tea, 300);
+            //drink.Consume();
+
+            IHotDrink drink = machine.MakeDrink();
+            drink.Consume();
         }
     }
 }
