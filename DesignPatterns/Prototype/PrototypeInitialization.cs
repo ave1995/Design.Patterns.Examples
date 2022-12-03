@@ -36,12 +36,5 @@ namespace DesignPatterns.Prototype
             WriteLine(foo2);
             WriteLine(foo3);
         }
-
-        public static void PrototypeCodingExerciseInit()
-        {
-            var line = new Line(new Point(10, 10), new Point(20, 10));
-            var deepcopy = line.DeepCopy();
-            deepcopy.Start.X = 9;
-        }
     }
 }
