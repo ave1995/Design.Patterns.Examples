@@ -1,4 +1,6 @@
 ﻿using DesignPatterns.Prototype.Inheritance;
+using DesignPatterns.Prototype.Serialization;
+using static System.Console;
 
 namespace DesignPatterns.Prototype
 {
@@ -16,8 +18,22 @@ namespace DesignPatterns.Prototype
             copy.Address.HouseNumber++;
             copy.Salary = 123000;
 
-            Console.WriteLine(john);
-            Console.WriteLine(copy);
+            WriteLine(john);
+            WriteLine(copy);
+        }
+
+        public static void SerializationInit()
+        {
+            Foo foo = new Foo { Stuff = 42, Whatever = "abc" };
+
+            Foo foo2 = foo.DeepCopyBinary(); // crashes without [Serializable]
+            Foo foo3 = foo.DeepCopyXml();
+
+            foo2.Whatever = "xyz";
+            foo3.Whatever = "ghj";
+            WriteLine(foo);
+            WriteLine(foo2);
+            WriteLine(foo3);
         }
     }
 }

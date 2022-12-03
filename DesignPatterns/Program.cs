@@ -29,6 +29,8 @@ using DesignPatterns.SOLID;
 
 //FactoriesInitialization.AbstractFactoryInit();
 
-PrototypeInitialization.InheritanceInit();
+//PrototypeInitialization.InheritanceInit();
+
+PrototypeInitialization.SerializationInit();
 
 
