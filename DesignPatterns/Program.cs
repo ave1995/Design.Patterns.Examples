@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.Builder;
 using DesignPatterns.Factories;
+using DesignPatterns.Prototype;
 using DesignPatterns.SOLID;
 
 //SOLIDInitialization.SingleResponsibilityPrinciple();
@@ -26,6 +27,8 @@ using DesignPatterns.SOLID;
 
 //FactoriesInitialization.FactoryMethodInit();
 
-FactoriesInitialization.AbstractFactoryInit();
+//FactoriesInitialization.AbstractFactoryInit();
+
+PrototypeInitialization.InheritanceInit();
 
 
