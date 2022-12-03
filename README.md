@@ -28,3 +28,10 @@ I made examples of design patterns according to the course with minor improvemen
 - A factory can take of object creation
 - A factory can be external or reside inside the object as an inner class
 - Hierarchies of factories can be used to create related objects
+
+## Prototype
+- To implement a prototype, partially construct an object and store it somewhere
+- Clone the prototype
+- Implement your own deep copy functionality; or 
+- Serialize and desirialize
+- Customize the resulting instance
