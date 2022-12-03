@@ -31,6 +31,8 @@ using DesignPatterns.SOLID;
 
 //PrototypeInitialization.InheritanceInit();
 
-PrototypeInitialization.SerializationInit();
+//PrototypeInitialization.SerializationInit();
+
+PrototypeInitialization.PrototypeCodingExerciseInit();
 
 
