@@ -34,7 +34,10 @@ using DesignPatterns.SOLID;
 
 //PrototypeInitialization.SerializationInit();
 
-AdapterInitialization.LineToPointInit();
+//AdapterInitialization.LineToPointInit();
+
+AdapterInitialization.GenericValueAdapterInit();
+
 
 
 
