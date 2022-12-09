@@ -10,8 +10,6 @@ namespace DesignPatterns.Adapter
     public class AdapterInitialization
     {
         #region LineToPoint
-
-        
         private static readonly List<VectorObject> vectorObjects = new List<VectorObject>
         {
             new VectorRectangle(1, 1, 10, 10),
@@ -43,7 +41,6 @@ namespace DesignPatterns.Adapter
             Console.WriteLine();
             Draw();
         }
-
         #endregion
 
     }
