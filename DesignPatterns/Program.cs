@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Builder;
+﻿using DesignPatterns.Adapter;
+using DesignPatterns.Builder;
 using DesignPatterns.Factories;
 using DesignPatterns.Prototype;
 using DesignPatterns.SOLID;
@@ -32,6 +33,8 @@ using DesignPatterns.SOLID;
 //PrototypeInitialization.InheritanceInit();
 
 //PrototypeInitialization.SerializationInit();
+
+AdapterInitialization.LineToPointInit();
 
 
 
