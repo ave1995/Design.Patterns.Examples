@@ -1,6 +1,7 @@
 ﻿using DesignPatterns.Adapter;
 using DesignPatterns.Bridge;
 using DesignPatterns.Builder;
+using DesignPatterns.Composite;
 using DesignPatterns.Factories;
 using DesignPatterns.Prototype;
 using DesignPatterns.SOLID;
@@ -41,7 +42,9 @@ using DesignPatterns.SOLID;
 
 //BridgeInitialization.BridgeExampleInit();
 
-BridgeInitialization.BridgeExerciseInit();
+//BridgeInitialization.BridgeExerciseInit();
+
+CompositeInitialization.GeometicShapesInit();
 
 
 
