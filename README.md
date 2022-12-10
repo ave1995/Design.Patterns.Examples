@@ -41,3 +41,8 @@ I made examples of design patterns according to the course with minor improvemen
 - Determine the API you have and the API you need
 - Create a component which aggregates (has reference to, ...) the adaptee
 - Intermediate representations can pile up: use caching and other optimizations
+
+## Bridge
+- Decouple abstraction from implementation
+- Both can exist as hierarchies
+- A stronger form of encapsulation
