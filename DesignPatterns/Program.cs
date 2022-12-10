@@ -44,7 +44,9 @@ using DesignPatterns.SOLID;
 
 //BridgeInitialization.BridgeExerciseInit();
 
-CompositeInitialization.GeometicShapesInit();
+//CompositeInitialization.GeometicShapesInit();
+
+CompositeInitialization.NeuralNetworksInit();
 
 
 

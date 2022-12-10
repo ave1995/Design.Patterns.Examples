@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Composite.GeometricShapes;
+using DesignPatterns.Composite.NeuralNetworks;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,18 @@ namespace DesignPatterns.Composite
             drawing.Children.Add(group);
 
             Console.WriteLine(drawing);
+        }
+
+        public static void NeuralNetworksInit()
+        {
+            var neuron1 = new Neuron { Value = 1};
+            var neuron2 = new Neuron { Value = 2};
+            var layer1 = new NeuronLayer();
+            var layer2 = new NeuronLayer();
+
+            neuron1.ConnectTo(neuron2);
+            neuron1.ConnectTo(layer1);
+            layer1.ConnectTo(layer2);
         }
     }
 }
