@@ -39,7 +39,9 @@ using DesignPatterns.SOLID;
 
 //AdapterInitialization.GenericValueAdapterInit();
 
-BridgeInitialization.BridgeExampleInit();
+//BridgeInitialization.BridgeExampleInit();
+
+BridgeInitialization.BridgeExerciseInit();
 
 
 

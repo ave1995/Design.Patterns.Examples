@@ -18,5 +18,10 @@ namespace DesignPatterns.Bridge
             circle.Resize(2);
             circle.Draw();
         }
+
+        public static void BridgeExerciseInit()
+        {
+            var t = new DesignPatterns.Bridge.Exercise.Triangle(new DesignPatterns.Bridge.Exercise.VectorRenderer()).ToString();
+        }
     }
 }
