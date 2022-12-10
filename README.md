@@ -46,3 +46,10 @@ I made examples of design patterns according to the course with minor improvemen
 - Decouple abstraction from implementation
 - Both can exist as hierarchies
 - A stronger form of encapsulation
+
+## Composite
+- Objects can use other objects via inheritance/composition
+- Some composed and singular objects need similar/identical behaviors
+- Composite design pattern lets us treat both types of objects iniformly
+- C# has special support for the *enumeration* concept
+- A single object can masquerade as a collection with *yield return this;*
