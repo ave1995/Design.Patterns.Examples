@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Adapter;
+using DesignPatterns.Bridge;
 using DesignPatterns.Builder;
 using DesignPatterns.Factories;
 using DesignPatterns.Prototype;
@@ -36,7 +37,9 @@ using DesignPatterns.SOLID;
 
 //AdapterInitialization.LineToPointInit();
 
-AdapterInitialization.GenericValueAdapterInit();
+//AdapterInitialization.GenericValueAdapterInit();
+
+BridgeInitialization.BridgeExampleInit();
 
 
 
