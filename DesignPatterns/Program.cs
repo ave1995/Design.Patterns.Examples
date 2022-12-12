@@ -2,6 +2,7 @@
 using DesignPatterns.Bridge;
 using DesignPatterns.Builder;
 using DesignPatterns.Composite;
+using DesignPatterns.Decorator;
 using DesignPatterns.Factories;
 using DesignPatterns.Prototype;
 using DesignPatterns.SOLID;
@@ -46,7 +47,9 @@ using DesignPatterns.SOLID;
 
 //CompositeInitialization.GeometicShapesInit();
 
-CompositeInitialization.NeuralNetworksInit();
+//CompositeInitialization.NeuralNetworksInit();
+
+DecoratorInitialization.MultipleInheritanceInit();
 
 
 
