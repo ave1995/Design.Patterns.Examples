@@ -49,8 +49,9 @@ using DesignPatterns.SOLID;
 
 //CompositeInitialization.NeuralNetworksInit();
 
-DecoratorInitialization.MultipleInheritanceInit();
+//DecoratorInitialization.MultipleInheritanceInit();
 
+DecoratorInitialization.CycleDetection();
 
 
 
