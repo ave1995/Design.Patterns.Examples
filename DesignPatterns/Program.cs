@@ -3,6 +3,7 @@ using DesignPatterns.Bridge;
 using DesignPatterns.Builder;
 using DesignPatterns.Composite;
 using DesignPatterns.Decorator;
+using DesignPatterns.Facade;
 using DesignPatterns.Factories;
 using DesignPatterns.Prototype;
 using DesignPatterns.SOLID;
@@ -53,7 +54,9 @@ using DesignPatterns.SOLID;
 
 //DecoratorInitialization.CycleDetectionInit();
 
-DecoratorInitialization.DecoratorExerciseInit();
+//DecoratorInitialization.DecoratorExerciseInit();
+
+FacadeExerciseInitialization.FacadeExerciseInit();
 
 
 
