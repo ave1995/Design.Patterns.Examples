@@ -51,7 +51,9 @@ using DesignPatterns.SOLID;
 
 //DecoratorInitialization.MultipleInheritanceInit();
 
-DecoratorInitialization.CycleDetection();
+//DecoratorInitialization.CycleDetectionInit();
+
+DecoratorInitialization.DecoratorExerciseInit();
 
 
 

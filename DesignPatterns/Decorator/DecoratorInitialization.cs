@@ -21,7 +21,7 @@ namespace DesignPatterns.Decorator
                 lizard.Crawl();
         }
 
-        public static void CycleDetection()
+        public static void CycleDetectionInit()
         {
             var circle = new Circle(2);
             var colored1 = new ColoredShape(circle, "red");
@@ -30,6 +30,12 @@ namespace DesignPatterns.Decorator
             Console.WriteLine(circle.AsString());
             Console.WriteLine(colored1.AsString());
             Console.WriteLine(colored2.AsString());
+        }
+
+        public static void DecoratorExerciseInit()
+        {
+            var t = new DecoratorExercise.DecoratorCodingExercise.Dragon(5);
+            t.Fly();
         }
     }
 }
