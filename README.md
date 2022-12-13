@@ -53,3 +53,8 @@ I made examples of design patterns according to the course with minor improvemen
 - Composite design pattern lets us treat both types of objects iniformly
 - C# has special support for the *enumeration* concept
 - A single object can masquerade as a collection with *yield return this;*
+
+## Decorator
+- A decorator keeps the reference to the decorated object(s)
+- May or may not proxy over calls
+- Exists in a *static*  X<Y<Foo>> Very limited due to inability to inherit from type parameters
