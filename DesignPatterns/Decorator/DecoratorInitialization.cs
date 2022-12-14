@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.Decorator.CycleDetection;
 using DesignPatterns.Decorator.MultipleInheritance;
+using DesignPatterns.Decorator.ReverseComparer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +37,16 @@ namespace DesignPatterns.Decorator
         {
             var t = new DecoratorExercise.DecoratorCodingExercise.Dragon(5);
             t.Fly();
+        }
+
+        public static void DecoratorComparerInit()
+        {
+            List<string> list = new() { "Hello", "Hi", "Hello", "Greetings", "Hi" };
+                
+            IComparer<string> comparer = StringComparer.CurrentCulture;
+
+            list.Sort(comparer);
+            list.Sort(comparer.Reverse().Reverse().Reverse()); //still just one call
         }
     }
 }

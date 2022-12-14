@@ -56,7 +56,9 @@ using DesignPatterns.SOLID;
 
 //DecoratorInitialization.DecoratorExerciseInit();
 
-FacadeExerciseInitialization.FacadeExerciseInit();
+DecoratorInitialization.DecoratorComparerInit();
+
+//FacadeExerciseInitialization.FacadeExerciseInit();
 
 
 
