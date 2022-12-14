@@ -58,3 +58,9 @@ I made examples of design patterns according to the course with minor improvemen
 - A decorator keeps the reference to the decorated object(s)
 - May or may not proxy over calls
 - Exists in a *static*  X<Y<Foo>> Very limited due to inability to inherit from type parameters
+
+
+## Facade
+- Build a Facade to provide a simplified API over a set of classes
+- May wish to (optionally) expose internals through the facade
+- May allow users to 'escalate' to use more complex APIs if they need to
