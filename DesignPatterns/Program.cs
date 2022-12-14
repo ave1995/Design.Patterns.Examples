@@ -5,6 +5,7 @@ using DesignPatterns.Composite;
 using DesignPatterns.Decorator;
 using DesignPatterns.Facade;
 using DesignPatterns.Factories;
+using DesignPatterns.Flyweight;
 using DesignPatterns.Prototype;
 using DesignPatterns.SOLID;
 
@@ -56,9 +57,10 @@ using DesignPatterns.SOLID;
 
 //DecoratorInitialization.DecoratorExerciseInit();
 
-DecoratorInitialization.DecoratorComparerInit();
+//DecoratorInitialization.DecoratorComparerInit();
 
 //FacadeExerciseInitialization.FacadeExerciseInit();
 
+FlyweightInitialization.RepeatingUserNames();
 
 

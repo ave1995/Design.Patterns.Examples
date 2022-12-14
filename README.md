@@ -59,7 +59,6 @@ I made examples of design patterns according to the course with minor improvemen
 - May or may not proxy over calls
 - Exists in a *static*  X<Y<Foo>> Very limited due to inability to inherit from type parameters
 
-
 ## Facade
 - Build a Facade to provide a simplified API over a set of classes
 - May wish to (optionally) expose internals through the facade
