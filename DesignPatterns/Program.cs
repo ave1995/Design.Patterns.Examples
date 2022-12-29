@@ -61,6 +61,9 @@ using DesignPatterns.SOLID;
 
 //FacadeExerciseInitialization.FacadeExerciseInit();
 
-FlyweightInitialization.RepeatingUserNames();
+//FlyweightInitialization.RepeatingUserNamesInit();
+
+FlyweightInitialization.TextFormatingInit();
+
 
 
