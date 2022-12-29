@@ -63,3 +63,8 @@ I made examples of design patterns according to the course with minor improvemen
 - Build a Facade to provide a simplified API over a set of classes
 - May wish to (optionally) expose internals through the facade
 - May allow users to 'escalate' to use more complex APIs if they need to
+
+## Flyweight
+- Store common data externally
+- Define the idea of 'ranges' on homogeneous collections and store data related to those ranges
+- .NET string interning is the Flyweight pattern
