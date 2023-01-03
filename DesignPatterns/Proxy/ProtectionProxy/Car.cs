@@ -10,7 +10,7 @@ namespace DesignPatterns.Proxy.ProtectionProxy
     {
         public void Drive()
         {
-            WriteLine("Car being driven");
+            Console.WriteLine("Car being driven");
         }
     }
 }

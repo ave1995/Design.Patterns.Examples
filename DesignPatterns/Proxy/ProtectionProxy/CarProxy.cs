@@ -22,7 +22,7 @@ namespace DesignPatterns.Proxy.ProtectionProxy
                 car.Drive();
             else
             {
-                WriteLine("Driver too young");
+                Console.WriteLine("Driver too young");
             }
         }
     }

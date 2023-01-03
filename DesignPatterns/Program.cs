@@ -7,6 +7,7 @@ using DesignPatterns.Facade;
 using DesignPatterns.Factories;
 using DesignPatterns.Flyweight;
 using DesignPatterns.Prototype;
+using DesignPatterns.Proxy;
 using DesignPatterns.SOLID;
 
 //SOLIDInitialization.SingleResponsibilityPrinciple();
@@ -63,7 +64,10 @@ using DesignPatterns.SOLID;
 
 //FlyweightInitialization.RepeatingUserNamesInit();
 
-FlyweightInitialization.TextFormatingInit();
+//FlyweightInitialization.TextFormatingInit();
 
+//ProxyInitialization.ProtectionProxyInit();
+
+ProxyInitialization.PropertyProxyInit();
 
 

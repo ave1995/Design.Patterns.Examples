@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Proxy.ProtectionProxy;
+﻿using DesignPatterns.Proxy.PropertyProxy;
+using DesignPatterns.Proxy.ProtectionProxy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,14 @@ namespace DesignPatterns.Proxy
         {
             ICar car = new CarProxy(new Driver(12)); // 22
             car.Drive();
+        }
+
+        public static void PropertyProxyInit()
+        {
+            var c = new Creature();
+            c.Agility = 10; // c.set_Agility(10) xxxxxxxxxxxxx
+                            // c.Agility = new Property<int>(10)
+            c.Agility = 10;
         }
     }
 }
