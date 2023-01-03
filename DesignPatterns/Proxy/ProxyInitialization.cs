@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.Proxy.PropertyProxy;
 using DesignPatterns.Proxy.ProtectionProxy;
+using DesignPatterns.Proxy.SoACompositeProxy;
 using DesignPatterns.Proxy.ValueProxy;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,27 @@ namespace DesignPatterns.Proxy
 
             Console.WriteLine(10f * 5.Percent());
             Console.WriteLine(2.Percent() + 3.Percent());
+        }
+
+        public static void SoACompositeProxy()
+        {
+            var monsters = new Monster[100];
+
+            for (int i = 0; i < 100; i++)
+            {
+                monsters[i] = new Monster();
+            }
+
+            foreach (var c in monsters)
+            {
+                c.X++; // not memory-efficient
+            }
+
+            var monsters2 = new Monsters(100);
+            foreach (var c in monsters2)
+            {
+                c.X++;
+            }
         }
     }
 }
