@@ -74,6 +74,8 @@ using DesignPatterns.SOLID;
 
 //ProxyInitialization.SoACompositeProxyInit();
 
-ProxyInitialization.DynamicProxyInit();
+//ProxyInitialization.DynamicProxyInit();
+
+ProxyInitialization.BitFragingInit();
 
 
