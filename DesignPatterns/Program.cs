@@ -68,6 +68,8 @@ using DesignPatterns.SOLID;
 
 //ProxyInitialization.ProtectionProxyInit();
 
-ProxyInitialization.PropertyProxyInit();
+//ProxyInitialization.PropertyProxyInit();
+
+ProxyInitialization.ValueProxyInit();
 
 

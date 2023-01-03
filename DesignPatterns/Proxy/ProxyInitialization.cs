@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.Proxy.PropertyProxy;
 using DesignPatterns.Proxy.ProtectionProxy;
+using DesignPatterns.Proxy.ValueProxy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +27,14 @@ namespace DesignPatterns.Proxy
             Property<int> property = 5;
 
             int x = property;
+        }
 
+        public static void ValueProxyInit()
+        {
+            var x = 5.Percent();
+
+            Console.WriteLine(10f * 5.Percent());
+            Console.WriteLine(2.Percent() + 3.Percent());
         }
     }
 }
