@@ -72,6 +72,8 @@ using DesignPatterns.SOLID;
 
 //ProxyInitialization.ValueProxyInit();
 
-ProxyInitialization.SoACompositeProxy();
+//ProxyInitialization.SoACompositeProxyInit();
+
+ProxyInitialization.DynamicProxyInit();
 
 

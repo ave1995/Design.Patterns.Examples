@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Proxy.PropertyProxy;
+﻿using DesignPatterns.Proxy.DynamicProxy;
+using DesignPatterns.Proxy.PropertyProxy;
 using DesignPatterns.Proxy.ProtectionProxy;
 using DesignPatterns.Proxy.SoACompositeProxy;
 using DesignPatterns.Proxy.ValueProxy;
@@ -38,7 +39,7 @@ namespace DesignPatterns.Proxy
             Console.WriteLine(2.Percent() + 3.Percent());
         }
 
-        public static void SoACompositeProxy()
+        public static void SoACompositeProxyInit()
         {
             var monsters = new Monster[100];
 
@@ -57,6 +58,17 @@ namespace DesignPatterns.Proxy
             {
                 c.X++;
             }
+        }
+
+        public static void DynamicProxyInit()
+        {
+            //var ba = new BankAccount();
+            var ba = Log<BankAccount>.As<IBankAccount>();
+
+            ba.Deposit(100);
+            ba.Withdraw(50);
+
+            Console.WriteLine(ba);
         }
     }
 }
