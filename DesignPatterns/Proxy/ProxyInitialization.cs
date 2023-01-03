@@ -22,6 +22,11 @@ namespace DesignPatterns.Proxy
             c.Agility = 10; // c.set_Agility(10) xxxxxxxxxxxxx
                             // c.Agility = new Property<int>(10)
             c.Agility = 10;
+
+            Property<int> property = 5;
+
+            int x = property;
+
         }
     }
 }
