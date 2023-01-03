@@ -68,3 +68,13 @@ I made examples of design patterns according to the course with minor improvemen
 - Store common data externally
 - Define the idea of 'ranges' on homogeneous collections and store data related to those ranges
 - .NET string interning is the Flyweight pattern
+
+## Proxy
+### Summary
+-
+-
+-
+### Proxy vs. Decorator
+- Proxy provides and identical interface; decorator provides an enhanced interface
+- Decorator typically aggregates (or has reference to) what it is decorating; proxy doesn't have to 
+- Proxy might not even be working with a materialized object
