@@ -71,9 +71,10 @@ I made examples of design patterns according to the course with minor improvemen
 
 ## Proxy
 ### Summary
--
--
--
+- A proxy has the same interface as the underlying object
+- To create a proxy, simply replicate the existing interface of an object
+- Add relevant functionality to the redefined member functions
+- Different proxies (communication, logging, caching, etc.) have completely different behaviors
 ### Proxy vs. Decorator
 - Proxy provides and identical interface; decorator provides an enhanced interface
 - Decorator typically aggregates (or has reference to) what it is decorating; proxy doesn't have to 
