@@ -1,6 +1,7 @@
 ﻿using DesignPatterns.Adapter;
 using DesignPatterns.Bridge;
 using DesignPatterns.Builder;
+using DesignPatterns.ChainOfResponsibility;
 using DesignPatterns.Composite;
 using DesignPatterns.Decorator;
 using DesignPatterns.Facade;
@@ -76,6 +77,8 @@ using DesignPatterns.SOLID;
 
 //ProxyInitialization.DynamicProxyInit();
 
-ProxyInitialization.BitFragingInit();
+//ProxyInitialization.BitFragingInit();
+
+ChainOfResponsibilityInitialization.MethodChainInit();
 
 
