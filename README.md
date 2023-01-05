@@ -79,3 +79,8 @@ I made examples of design patterns according to the course with minor improvemen
 - Proxy provides and identical interface; decorator provides an enhanced interface
 - Decorator typically aggregates (or has reference to) what it is decorating; proxy doesn't have to 
 - Proxy might not even be working with a materialized object
+
+## ChainOfResponsibility
+- Chain of Responsibility can be implemented as a chain of references or a centralized construct
+- Enlist objects in the chain, possibly controlling their order
+- Object removal from (e.g., in *Dispose()*)
