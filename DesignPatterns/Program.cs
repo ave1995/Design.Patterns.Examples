@@ -79,6 +79,10 @@ using DesignPatterns.SOLID;
 
 //ProxyInitialization.BitFragingInit();
 
-ChainOfResponsibilityInitialization.MethodChainInit();
+//ChainOfResponsibilityInitialization.MethodChainInit();
+
+//ChainOfResponsibilityInitialization.BrokerChainInit();
+
+ChainOfResponsibilityInitialization.ChainCodingExerciseInit();
 
 
