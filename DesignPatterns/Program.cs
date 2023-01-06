@@ -2,6 +2,7 @@
 using DesignPatterns.Bridge;
 using DesignPatterns.Builder;
 using DesignPatterns.ChainOfResponsibility;
+using DesignPatterns.Command;
 using DesignPatterns.Composite;
 using DesignPatterns.Decorator;
 using DesignPatterns.Facade;
@@ -83,6 +84,8 @@ using DesignPatterns.SOLID;
 
 //ChainOfResponsibilityInitialization.BrokerChainInit();
 
-ChainOfResponsibilityInitialization.ChainCodingExerciseInit();
+//ChainOfResponsibilityInitialization.ChainCodingExerciseInit();
+
+CommandInitialization.BankCommandInit();
 
 
