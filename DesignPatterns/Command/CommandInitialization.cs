@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Command.SimpleCommand;
+﻿using DesignPatterns.Command.CompositeCommand;
+using DesignPatterns.Command.SimpleCommand;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +13,11 @@ namespace DesignPatterns.Command
     {
         public static void BankCommandInit()
         {
-            var ba = new BankAccount();
-            var commands = new List<BankAccountCommand>
+            var ba = new SimpleCommand.BankAccount();
+            var commands = new List<SimpleCommand.BankAccountCommand>
               {
-                new BankAccountCommand(ba, BankAccountCommand.Action.Deposit, 100),
-                new BankAccountCommand(ba, BankAccountCommand.Action.Withdraw, 1000)
+                new SimpleCommand.BankAccountCommand(ba, SimpleCommand.BankAccountCommand.Action.Deposit, 100),
+                new SimpleCommand.BankAccountCommand(ba, SimpleCommand.BankAccountCommand.Action.Withdraw, 1000)
               };
 
             WriteLine(ba);
@@ -30,6 +31,37 @@ namespace DesignPatterns.Command
                 c.Undo();
 
             WriteLine(ba);
+        }
+
+        public static void BankCompositeCommandInit()
+        {
+            var ba = new CompositeCommand.BankAccount();
+            var cmdDeposit = new CompositeCommand.BankAccountCommand(ba,
+              CompositeCommand.BankAccountCommand.Action.Deposit, 100);
+            var cmdWithdraw = new CompositeCommand.BankAccountCommand(ba,
+              CompositeCommand.BankAccountCommand.Action.Withdraw, 1000);
+            cmdDeposit.Call();
+            cmdWithdraw.Call();
+            WriteLine(ba);
+            cmdWithdraw.Undo();
+            cmdDeposit.Undo();
+            WriteLine(ba);
+
+
+            var from = new CompositeCommand.BankAccount();
+            from.Deposit(100);
+            var to = new CompositeCommand.BankAccount();
+
+            var mtc = new MoneyTransferCommand(from, to, 1000);
+            mtc.Call();
+
+
+            // Deposited $100, balance is now 100
+            // balance: 100
+            // balance: 0
+
+            WriteLine(from);
+            WriteLine(to);
         }
 
     }

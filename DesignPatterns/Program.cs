@@ -86,6 +86,9 @@ using DesignPatterns.SOLID;
 
 //ChainOfResponsibilityInitialization.ChainCodingExerciseInit();
 
-CommandInitialization.BankCommandInit();
+//CommandInitialization.BankCommandInit();
+
+CommandInitialization.BankCompositeCommandInit();
+
 
 
