@@ -8,10 +8,12 @@ using DesignPatterns.Decorator;
 using DesignPatterns.Facade;
 using DesignPatterns.Factories;
 using DesignPatterns.Flyweight;
+using DesignPatterns.Interpreter;
 using DesignPatterns.Prototype;
 using DesignPatterns.Proxy;
 using DesignPatterns.SOLID;
 
+#region SOLID
 //SOLIDInitialization.SingleResponsibilityPrinciple();
 
 //SOLIDInitialization.OpenClosedPrinciple();
@@ -19,7 +21,9 @@ using DesignPatterns.SOLID;
 //SOLIDInitialization.LiskovSubstitutionPrinciple();
 
 //SOLIDInitialization.DependencyInversionPrinciple();
+#endregion
 
+#region Builder
 //BuilderInitialization.HtmlBuilderIni();
 
 //BuilderInitialization.BuilderInheritenceInit();
@@ -31,29 +35,41 @@ using DesignPatterns.SOLID;
 //BuilderInitialization.FacetedBuilderInit();
 
 //BuilderInitialization.BuilderCodingExerciseInit();
+#endregion
 
+#region Factories
 //FactoriesInitialization.BulkReplacementInit();
 
 //FactoriesInitialization.FactoryMethodInit();
 
 //FactoriesInitialization.AbstractFactoryInit();
+#endregion
 
+#region Prototype
 //PrototypeInitialization.InheritanceInit();
 
 //PrototypeInitialization.SerializationInit();
+#endregion
 
+#region Adapter
 //AdapterInitialization.LineToPointInit();
 
 //AdapterInitialization.GenericValueAdapterInit();
+#endregion
 
+#region Bridge
 //BridgeInitialization.BridgeExampleInit();
 
 //BridgeInitialization.BridgeExerciseInit();
+#endregion
 
+#region Composite
 //CompositeInitialization.GeometicShapesInit();
 
 //CompositeInitialization.NeuralNetworksInit();
+#endregion
 
+#region Decorator
 //DecoratorInitialization.MultipleInheritanceInit();
 
 //DecoratorInitialization.CycleDetectionInit();
@@ -61,13 +77,19 @@ using DesignPatterns.SOLID;
 //DecoratorInitialization.DecoratorExerciseInit();
 
 //DecoratorInitialization.DecoratorComparerInit();
+#endregion
 
+#region Facade
 //FacadeExerciseInitialization.FacadeExerciseInit();
+#endregion
 
+#region Flyweight
 //FlyweightInitialization.RepeatingUserNamesInit();
 
 //FlyweightInitialization.TextFormatingInit();
+#endregion
 
+#region Proxy
 //ProxyInitialization.ProtectionProxyInit();
 
 //ProxyInitialization.PropertyProxyInit();
@@ -79,16 +101,30 @@ using DesignPatterns.SOLID;
 //ProxyInitialization.DynamicProxyInit();
 
 //ProxyInitialization.BitFragingInit();
+#endregion
 
+#region ChainOfResponsibility
 //ChainOfResponsibilityInitialization.MethodChainInit();
 
 //ChainOfResponsibilityInitialization.BrokerChainInit();
 
 //ChainOfResponsibilityInitialization.ChainCodingExerciseInit();
+#endregion
 
+#region Command
 //CommandInitialization.BankCommandInit();
 
-CommandInitialization.BankCompositeCommandInit();
+//CommandInitialization.BankCompositeCommandInit();
+#endregion
+
+#region Interpreter
+//InterpreterInitialization.HandmadeInterpreter();
+
+//ANTLR 
+
+InterpreterInitialization.InterpreterExerciseInit();
+#endregion
+
 
 
 
