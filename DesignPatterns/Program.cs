@@ -136,7 +136,9 @@ using DesignPatterns.SOLID;
 #region Mediator
 //MediatorInitilization.ChatRoomInit();
 
-MediatorInitilization.EventBrokerInit();
+//MediatorInitilization.EventBrokerInit();
+
+MediatorInitilization.SimpleMediatRDemo();
 #endregion
 
 

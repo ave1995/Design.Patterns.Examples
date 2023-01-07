@@ -1,6 +1,8 @@
 ﻿using Autofac;
 using DesignPatterns.Mediator.Broker;
 using DesignPatterns.Mediator.ChatRoom;
+using DesignPatterns.Mediator.SimpleMediatRDemo;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,6 +53,28 @@ namespace DesignPatterns.Mediator
                 player1.AssaultReferee();
                 player2.Score();
             }
+        }
+
+        public static void SimpleMediatRDemo()
+        {
+            var builder = new ContainerBuilder();
+            builder.RegisterType<MediatR.Mediator>()
+              .As<IMediator>()
+              .InstancePerLifetimeScope(); // singleton
+
+            builder.Register<ServiceFactory>(context =>
+            {
+                var c = context.Resolve<IComponentContext>();
+                return t => c.Resolve(t);
+            });
+
+            builder.RegisterAssemblyTypes(typeof(MediatorInitilization).Assembly)
+              .AsImplementedInterfaces();
+
+            var container = builder.Build();
+            var mediator = container.Resolve<IMediator>();
+            var response = mediator.Send(new PingCommand()).Result;
+            Console.WriteLine($"We got a pong at {response.Timestamp}");
         }
     }
 }
