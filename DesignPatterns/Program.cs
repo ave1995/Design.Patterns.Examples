@@ -10,6 +10,7 @@ using DesignPatterns.Factories;
 using DesignPatterns.Flyweight;
 using DesignPatterns.Interpreter;
 using DesignPatterns.Iterator;
+using DesignPatterns.Mediator;
 using DesignPatterns.Prototype;
 using DesignPatterns.Proxy;
 using DesignPatterns.SOLID;
@@ -127,11 +128,15 @@ using DesignPatterns.SOLID;
 #endregion
 
 #region Iterator
-IteratorInitialization.TreeIteratorInit();
+//IteratorInitialization.TreeIteratorInit();
 
-IteratorInitialization.TreePreOrderInit();
+//IteratorInitialization.TreePreOrderInit();
 #endregion
 
+#region Mediator
+//MediatorInitilization.ChatRoomInit();
 
+MediatorInitilization.EventBrokerInit();
+#endregion
 
 

@@ -8,8 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.5.0" />
     <PackageReference Include="ImpromptuInterface" Version="7.0.1" />
     <PackageReference Include="MSTest.TestFramework" Version="3.0.0" />
+    <PackageReference Include="System.Reactive" Version="5.0.0" />
   </ItemGroup>
 
 </Project>
