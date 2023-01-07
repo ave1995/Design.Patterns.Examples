@@ -102,3 +102,9 @@ I made examples of design patterns according to the course with minor improvemen
 - An iterator object, unlike a method, cannot be recursive
 - Generally, and IEnumerable<T> - returning method is enough
 - Iteration works through duck typing - you need a GetEnumerator() that yields a type that has Current and MoveNext()
+
+## Mediator
+- Create the mediator and have each object in the system refer to it E.g., in a field
+- Mediator engages in bidirectional communication with its connected components
+- Components have functions the mediator can call
+- Event processing (e.g., Rx) libraries make communication easier to implement
