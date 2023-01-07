@@ -90,3 +90,9 @@ I made examples of design patterns according to the course with minor improvemen
 - Define instruction for applying the command (either in the command itself, or elsewhere)
 - Optionally define instructions for undoing the command
 - Can create composite commands (a.k.a macros)
+
+## Interpreter
+- Barring simple cases, an interpreter acts in two stages
+- Lexing turns text into a set of tokens, e.g. 3*(4+5) => Lit[3] Star Lparen Lit[4] Plus Lit[5] Rparen
+- Parsing tokens into meaningful constructs => MultiplicationExpression[Integer[3], AdditionExpression[Integer[4], Integer[5]]]
+- Parsed data can then be traversed
