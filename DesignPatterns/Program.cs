@@ -9,6 +9,7 @@ using DesignPatterns.Facade;
 using DesignPatterns.Factories;
 using DesignPatterns.Flyweight;
 using DesignPatterns.Interpreter;
+using DesignPatterns.Iterator;
 using DesignPatterns.Prototype;
 using DesignPatterns.Proxy;
 using DesignPatterns.SOLID;
@@ -122,7 +123,11 @@ using DesignPatterns.SOLID;
 
 //ANTLR 
 
-InterpreterInitialization.InterpreterExerciseInit();
+//InterpreterInitialization.InterpreterExerciseInit();
+#endregion
+
+#region Iterator
+IteratorInitialization.TreeIteratorInit();
 #endregion
 
 
