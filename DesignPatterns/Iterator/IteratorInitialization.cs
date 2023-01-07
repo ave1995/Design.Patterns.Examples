@@ -45,5 +45,24 @@ namespace DesignPatterns.Iterator
             foreach (var node in tree)
                 WriteLine(node.Value);
         }
+
+        public static void TreePreOrderInit()
+        {
+            //     1
+            //    / \
+            //   2   3
+            //  / \
+            // 4   5
+            //    / \
+            //   6   7
+            // in-order:  213
+            // preorder:  123
+            // postorder: 231
+
+            var root = new PreorderTraversalExercise.Node<int>(1,
+              new PreorderTraversalExercise.Node<int>(2, new PreorderTraversalExercise.Node<int>(4), new PreorderTraversalExercise.Node<int>(5, new PreorderTraversalExercise.Node<int>(6), new PreorderTraversalExercise.Node<int>(7))), new PreorderTraversalExercise.Node<int>(3));
+           
+            WriteLine(string.Join(",", root.PreOrder.ToList()));
+        }
     }
 }

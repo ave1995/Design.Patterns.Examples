@@ -128,6 +128,8 @@ using DesignPatterns.SOLID;
 
 #region Iterator
 IteratorInitialization.TreeIteratorInit();
+
+IteratorInitialization.TreePreOrderInit();
 #endregion
 
 
