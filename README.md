@@ -96,3 +96,9 @@ I made examples of design patterns according to the course with minor improvemen
 - Lexing turns text into a set of tokens, e.g. 3*(4+5) => Lit[3] Star Lparen Lit[4] Plus Lit[5] Rparen
 - Parsing tokens into meaningful constructs => MultiplicationExpression[Integer[3], AdditionExpression[Integer[4], Integer[5]]]
 - Parsed data can then be traversed
+
+## Iterator
+- An iterator specified how you can traverse an object
+- An iterator object, unlike a method, cannot be recursive
+- Generally, and IEnumerable<T> - returning method is enough
+- Iteration works through duck typing - you need a GetEnumerator() that yields a type that has Current and MoveNext()
