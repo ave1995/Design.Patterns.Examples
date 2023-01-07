@@ -138,7 +138,9 @@ using DesignPatterns.SOLID;
 
 //MediatorInitilization.EventBrokerInit();
 
-MediatorInitilization.SimpleMediatRDemo();
+//MediatorInitilization.SimpleMediatRDemo();
+
+MediatorInitilization.MediatorCodingExerciseInit();
 #endregion
 
 

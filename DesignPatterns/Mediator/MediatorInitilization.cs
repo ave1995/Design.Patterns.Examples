@@ -76,5 +76,16 @@ namespace DesignPatterns.Mediator
             var response = mediator.Send(new PingCommand()).Result;
             Console.WriteLine($"We got a pong at {response.Timestamp}");
         }
+
+        public static void MediatorCodingExerciseInit()
+        {
+            var mediator = new MediatorCodingExercise.Mediator();
+
+            var participant1 = new MediatorCodingExercise.Participant(mediator);
+            var participant2 = new MediatorCodingExercise.Participant(mediator);
+            var participant3 = new MediatorCodingExercise.Participant(mediator);
+
+            participant1.Say(5);
+        }
     }
 }
