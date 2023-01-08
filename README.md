@@ -114,3 +114,9 @@ I made examples of design patterns according to the course with minor improvemen
 - A memento is simply a token/handle class with (typically) no functions of its own
 - A memento is not required to expose directly the state(s) to which it reverts the system
 - Can be used to implement undo/redo
+
+## Null Object
+- Implement the required interface
+- Rewrite the methods with empy bodies > If method is non-void, return default(T), If these values are ever used, you are in trouble
+- Supply an instance of Null Object in place of actual object
+- Dynamic construction possible > With associated performance implications
