@@ -108,3 +108,9 @@ I made examples of design patterns according to the course with minor improvemen
 - Mediator engages in bidirectional communication with its connected components
 - Components have functions the mediator can call
 - Event processing (e.g., Rx) libraries make communication easier to implement
+
+## Memento
+- Mementos are used to roll back states arbitrarily
+- A memento is simply a token/handle class with (typically) no functions of its own
+- A memento is not required to expose directly the state(s) to which it reverts the system
+- Can be used to implement undo/redo
