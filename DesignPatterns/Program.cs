@@ -11,6 +11,7 @@ using DesignPatterns.Flyweight;
 using DesignPatterns.Interpreter;
 using DesignPatterns.Iterator;
 using DesignPatterns.Mediator;
+using DesignPatterns.Memento;
 using DesignPatterns.Prototype;
 using DesignPatterns.Proxy;
 using DesignPatterns.SOLID;
@@ -140,7 +141,9 @@ using DesignPatterns.SOLID;
 
 //MediatorInitilization.SimpleMediatRDemo();
 
-MediatorInitilization.MediatorCodingExerciseInit();
+//MediatorInitialization.MediatorCodingExerciseInit();
 #endregion
 
-
+#region Memento
+MementoInitialization.BasicMementoInit();
+#endregion

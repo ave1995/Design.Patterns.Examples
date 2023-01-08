@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Mediator
 {
-    public class MediatorInitilization
+    public class MediatorInitialization
     {
         public static void ChatRoomInit()
         {
@@ -68,7 +68,7 @@ namespace DesignPatterns.Mediator
                 return t => c.Resolve(t);
             });
 
-            builder.RegisterAssemblyTypes(typeof(MediatorInitilization).Assembly)
+            builder.RegisterAssemblyTypes(typeof(MediatorInitialization).Assembly)
               .AsImplementedInterfaces();
 
             var container = builder.Build();
