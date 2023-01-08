@@ -145,5 +145,7 @@ using DesignPatterns.SOLID;
 #endregion
 
 #region Memento
-MementoInitialization.BasicMementoInit();
+//MementoInitialization.BasicMementoInit();
+
+MementoInitialization.TokenExerciseInit();
 #endregion
