@@ -12,6 +12,7 @@ using DesignPatterns.Interpreter;
 using DesignPatterns.Iterator;
 using DesignPatterns.Mediator;
 using DesignPatterns.Memento;
+using DesignPatterns.Observer;
 using DesignPatterns.Prototype;
 using DesignPatterns.Proxy;
 using DesignPatterns.SOLID;
@@ -147,5 +148,10 @@ using DesignPatterns.SOLID;
 #region Memento
 //MementoInitialization.BasicMementoInit();
 
-MementoInitialization.TokenExerciseInit();
+//MementoInitialization.TokenExerciseInit();
+#endregion
+
+#region Observer
+ObserverInitialization.ObserverViaEventKeywordInit();
+
 #endregion
