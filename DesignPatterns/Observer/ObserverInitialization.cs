@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Observer.ObserverViaEventKeyword;
+using DesignPatterns.Observer.ObserverViaInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,20 @@ namespace DesignPatterns.Observer
             person.FallsIll += CallDoctor;
 
             person.CatchACold();
+        }
+
+        public static void ObserverViaInterfacesInit()
+        {
+            var employee = new Employee();
+            var subscriber = new EventObserver();
+            var sub = employee.Subscribe(subscriber);
+
+            employee.CatchACold();
+
+            sub.Dispose();
+
+            employee.CatchACold(); //no console
+
         }
     }
 }

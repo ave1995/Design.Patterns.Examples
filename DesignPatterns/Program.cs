@@ -152,6 +152,7 @@ using DesignPatterns.SOLID;
 #endregion
 
 #region Observer
-ObserverInitialization.ObserverViaEventKeywordInit();
+//ObserverInitialization.ObserverViaEventKeywordInit();
 
+ObserverInitialization.ObserverViaInterfacesInit();
 #endregion
