@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Observer.ObservableCollections;
+﻿using DesignPatterns.Observer.BidirectionalObserver;
+using DesignPatterns.Observer.ObservableCollections;
 using DesignPatterns.Observer.ObserverViaEventKeyword;
 using DesignPatterns.Observer.ObserverViaInterfaces;
 using System;
@@ -61,6 +62,47 @@ namespace DesignPatterns.Observer
             // maybe you are trading a futures contract that expired and there will be no more prices
 
             // 3) What happens if the market feed is broken?
+        }
+
+        public static void BidirectionalObserverInit()
+        {
+            var product = new Product { Name = "Book" };
+            var window = new Window(product);
+
+            // want to ensure that when product name changes
+            // in one component, it also changes in another
+
+            // product.PropertyChanged += (sender, eventArgs) =>
+            // {
+            //   if (eventArgs.PropertyName == "Name")
+            //   {
+            //     Console.WriteLine("Name changed in Product");
+            //     window.ProductName = product.Name;
+            //   }
+            // };
+            //
+            // window.PropertyChanged += (sender, eventArgs) =>
+            // {
+            //   if (eventArgs.PropertyName == "ProductName")
+            //   {
+            //     Console.WriteLine("Name changed in Window");
+            //     product.Name = window.ProductName;
+            //   }
+            // };
+
+            using var binding = new BidirectionalBinding(
+              product,
+              () => product.Name,
+              window,
+              () => window.ProductName);
+
+            // there is no infinite loop because of
+            // self-assignment guard
+            product.Name = "Table";
+            window.ProductName = "Chair";
+
+            Console.WriteLine(product);
+            Console.WriteLine(window);
         }
 
     }
