@@ -156,5 +156,7 @@ using DesignPatterns.SOLID;
 
 //ObserverInitialization.ObserverViaInterfacesInit();
 
-ObserverInitialization.ObervableCollectionsInit();
+//ObserverInitialization.ObervableCollectionsInit();
+
+ObserverInitialization.ObserverPropertyDependenciesInit();
 #endregion

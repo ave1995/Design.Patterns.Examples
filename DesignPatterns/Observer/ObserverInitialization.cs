@@ -1,5 +1,6 @@
 ﻿using DesignPatterns.Observer.BidirectionalObserver;
 using DesignPatterns.Observer.ObservableCollections;
+using DesignPatterns.Observer.ObserverPropertyDependencies;
 using DesignPatterns.Observer.ObserverViaEventKeyword;
 using DesignPatterns.Observer.ObserverViaInterfaces;
 using System;
@@ -103,6 +104,17 @@ namespace DesignPatterns.Observer
 
             Console.WriteLine(product);
             Console.WriteLine(window);
+        }
+
+        public static void ObserverPropertyDependenciesInit()
+        {
+            var p = new Voter();
+            p.PropertyChanged += (sender, eventArgs) =>
+            {
+                Console.WriteLine($"{eventArgs.PropertyName} has changed");
+            };
+            p.Age = 15; // should not really affect CanVote :)
+            p.Citizen = true;
         }
 
     }
