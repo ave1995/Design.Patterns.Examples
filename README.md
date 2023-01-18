@@ -120,3 +120,9 @@ I made examples of design patterns according to the course with minor improvemen
 - Rewrite the methods with empy bodies > If method is non-void, return default(T), If these values are ever used, you are in trouble
 - Supply an instance of Null Object in place of actual object
 - Dynamic construction possible > With associated performance implications
+
+## Observer
+- Observer is an intrusive approach: an observable must provide an event to subscribe to
+- Speacial care must be taken to prevent issues in multithreaded scenarios
+- .NET comes with observable collections
+- IObserver<T> / IObservable<T> are used in stream processing (Reactive Extensions)
