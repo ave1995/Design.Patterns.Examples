@@ -34,5 +34,10 @@ namespace DesignPatterns.State
                 state = s;
             }
         }
+
+        public static void SwitchBasedStateMachineInit()
+        {
+            SwitchBasedStateMachine.SwitchBasedStateMachine.Run();
+        }
     }
 }

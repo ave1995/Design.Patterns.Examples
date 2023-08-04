@@ -163,5 +163,8 @@ using DesignPatterns.State;
 #endregion
 
 #region State
-StateInitialization.HandmadeStateMachineInit();
+//StateInitialization.HandmadeStateMachineInit();
+
+StateInitialization.SwitchBasedStateMachineInit();
+
 #endregion
