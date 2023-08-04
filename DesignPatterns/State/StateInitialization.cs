@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DesignPatterns.State.HandmadeStateMachine;
+using DesignPatterns.State.SwitchExpressions;
 using static System.Console;
 
 namespace DesignPatterns.State
@@ -38,6 +39,24 @@ namespace DesignPatterns.State
         public static void SwitchBasedStateMachineInit()
         {
             SwitchBasedStateMachine.SwitchBasedStateMachine.Run();
+        }
+
+        public static void SwitchExpressionsInit()
+        {
+            Chest chest = Chest.Locked;
+            Console.WriteLine($"Chest is {chest}");
+
+            // unlock with key
+            chest = SwitchExpressions.SwitchExpressions.Manipulate(chest, SwitchExpressions.Action.Open, true);
+            Console.WriteLine($"Chest is now {chest}");
+
+            // close it!
+            chest = SwitchExpressions.SwitchExpressions.Manipulate(chest, SwitchExpressions.Action.Close, false);
+            Console.WriteLine($"Chest is now {chest}");
+
+            // close it again!
+            chest = SwitchExpressions.SwitchExpressions.Manipulate(chest, SwitchExpressions.Action.Close, false);
+            Console.WriteLine($"Chest is now {chest}");
         }
     }
 }
