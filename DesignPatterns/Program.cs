@@ -16,6 +16,7 @@ using DesignPatterns.Observer;
 using DesignPatterns.Prototype;
 using DesignPatterns.Proxy;
 using DesignPatterns.SOLID;
+using DesignPatterns.State;
 
 #region SOLID
 //SOLIDInitialization.SingleResponsibilityPrinciple();
@@ -158,5 +159,9 @@ using DesignPatterns.SOLID;
 
 //ObserverInitialization.ObervableCollectionsInit();
 
-ObserverInitialization.ObserverPropertyDependenciesInit();
+//ObserverInitialization.ObserverPropertyDependenciesInit();
+#endregion
+
+#region State
+StateInitialization.HandmadeStateMachineInit();
 #endregion
