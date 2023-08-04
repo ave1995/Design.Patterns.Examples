@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.State
 {
-    internal class StateInitialization
+    public class StateInitialization
     {
+        public static void HandmadeStateMachineInit()
+        {
+
+        }
     }
 }
