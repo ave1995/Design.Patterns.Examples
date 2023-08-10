@@ -127,11 +127,11 @@ I made examples of design patterns according to the course with minor improvemen
 - .NET comes with observable collections
 - IObserver<T> / IObservable<T> are used in stream processing (Reactive Extensions)
 
-- ## State
+## State
 - Given sufficient complexity, it pays to formally define possible states and events/triggers
 - Can define: State entry/exit behavior, Action when a particular event causes a transition, Guard conditions enabling/disabling a transition, Default action when no transitions are found for an event
 
-- - ## Strategy
+## Strategy
 - Define an algorithm at a high level
 - Define the interface you expect each strategy to follow
 - Provide for either dynamic or static composition of strategy in the overall algorithm
