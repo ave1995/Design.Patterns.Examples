@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DesignPatterns.State.HandmadeStateMachine;
+using DesignPatterns.State.LockExercise;
 using DesignPatterns.State.SwitchExpressions;
 using static System.Console;
 
@@ -57,6 +58,18 @@ namespace DesignPatterns.State
             // close it again!
             chest = SwitchExpressions.SwitchExpressions.Manipulate(chest, SwitchExpressions.Action.Close, false);
             Console.WriteLine($"Chest is now {chest}");
+        }
+
+        public static void LockReader()
+        {
+            var combinationLock = new CombinationLock(new int[5] { 1, 2, 3, 4, 5 });
+
+            while (true) 
+            {
+                WriteLine($"Status: {combinationLock.Status}");
+                WriteLine("Type a number to open lock:");
+                combinationLock.EnterDigit(int.Parse(Console.ReadLine()));
+            }
         }
     }
 }

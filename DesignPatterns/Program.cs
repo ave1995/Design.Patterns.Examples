@@ -165,6 +165,8 @@ using DesignPatterns.State;
 #region State
 //StateInitialization.HandmadeStateMachineInit();
 
-StateInitialization.SwitchBasedStateMachineInit();
+//StateInitialization.SwitchBasedStateMachineInit();
+
+StateInitialization.LockReader();
 
 #endregion
