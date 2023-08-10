@@ -17,6 +17,7 @@ using DesignPatterns.Prototype;
 using DesignPatterns.Proxy;
 using DesignPatterns.SOLID;
 using DesignPatterns.State;
+using DesignPatterns.Strategy_Policy_;
 
 #region SOLID
 //SOLIDInitialization.SingleResponsibilityPrinciple();
@@ -167,6 +168,12 @@ using DesignPatterns.State;
 
 //StateInitialization.SwitchBasedStateMachineInit();
 
-StateInitialization.LockReader();
+//StateInitialization.LockReader();
+
+#endregion
+
+#region Strategy
+
+StrategyInitialization.DynamicStrategyInit();
 
 #endregion
