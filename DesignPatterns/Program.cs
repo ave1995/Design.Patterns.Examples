@@ -18,6 +18,7 @@ using DesignPatterns.Proxy;
 using DesignPatterns.SOLID;
 using DesignPatterns.State;
 using DesignPatterns.Strategy_Policy_;
+using DesignPatterns.TemplateMethod;
 
 #region SOLID
 //SOLIDInitialization.SingleResponsibilityPrinciple();
@@ -174,6 +175,11 @@ using DesignPatterns.Strategy_Policy_;
 
 #region Strategy
 
-StrategyInitialization.DynamicStrategyInit();
+//StrategyInitialization.DynamicStrategyInit();
 
+#endregion
+
+#region TemplateMethod
+
+TemplateMethodInitialization.CollectibleCardGame();
 #endregion
