@@ -135,3 +135,8 @@ I made examples of design patterns according to the course with minor improvemen
 - Define an algorithm at a high level
 - Define the interface you expect each strategy to follow
 - Provide for either dynamic or static composition of strategy in the overall algorithm
+
+## Tempate Method
+- Define an algorithm at a high level
+- Define constituent parts as abstract methods/properties
+- Inherit the algorithm class, providing necessary overrides
